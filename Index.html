@@ -13,30 +13,69 @@
     <title>Hello, world!</title>
     <style>
         .red {
-            background-color: red;
-            height: 50vh;
+            background-color: violet;
         }
 
         .green {
             background-color: green;
-            height: 50vh;
         }
 
         .blue {
             background-color: blue;
+        }
+
+        .vh-5 {
+            height: 5vh;
+        }
+
+        .vh-10 {
+            height: 10vh;
+        }
+
+        .vh-13 {
+            height: 13vh;
+        }
+
+        .vh-2 {
+            height: 2vh;
+        }
+
+        .vh-50 {
             height: 50vh;
+        }
+
+        .vh-80 {
+            height: 80vh;
         }
     </style>
 </head>
 
-<body>
-    <div class="container">
-        <div class="row">
-            <div class="col d-none d-md-block col-md-3 red"></div>
-            <div class="col-12 col-md blue"></div>
-            <div class="col-12 col-md-3 green"></div>
+<body class="bg-light">
+    <h1>this is a text the example</h1>
+    <!-- carousel -->
+    <div class="container-fluid">
+        <div id="carouselControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="row">
+                    <div class="col-12 col-md-12 mt-3 mt-md-0">
+                        <div class="carousel-item active" data-interval="800">
+                            <img src="asset/example1.jpg" class="d-block w-100 vh-80">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="asset/example.jpg" class="d-block w-100 vh-80">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
         </div>
     </div>
+    <!--/carousel-->
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
@@ -47,11 +86,17 @@
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
 
-   
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
